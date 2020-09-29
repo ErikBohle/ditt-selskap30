@@ -93,22 +93,28 @@ body {
 }
 
 /* FAQ LIST */
+.faq-h1{
+  text-align: center;
+  padding:  10px 0;
+}
 .faq{
   width: 100%;
   text-align: left;
   padding-top: 10px;
   font-size: 1.5em;
 }
+
 .faq-answer{
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  list-style: none;
 }
 .faq-address{
 font-style: italic;
 }
 /* FOOTER */
-.footer {
+/* .footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -132,6 +138,6 @@ font-style: italic;
 .footer a:active {
   color: red;
   text-decoration: none;
-}
+} */
 
 
