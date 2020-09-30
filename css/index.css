@@ -122,13 +122,17 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--main-color);
-  text-align: center;
   color: var(--main-bg-color);
   padding: 20px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
+.footer .logo { 
+  width:50px;
+  margin: 0 10px 0 0;
+}
+
 .footer ul li {
   list-style: none;
   color: var(--main-bg-color);
