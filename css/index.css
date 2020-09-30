@@ -70,7 +70,7 @@ body {
 	transition: all 0.2s linear;
 }
 /* logo */
-#logo {
+.logo {
   filter: invert(100%);
   width: 1em;
   background-color: var(--main-bg-color);
@@ -114,7 +114,7 @@ body {
 font-style: italic;
 }
 /* FOOTER */
-/* .footer {
+ .footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -138,6 +138,6 @@ font-style: italic;
 .footer a:active {
   color: red;
   text-decoration: none;
-} */
-
+} 
+ 
 
