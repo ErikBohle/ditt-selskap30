@@ -9,9 +9,11 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  
 }
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 /* NAVBAR */
 .navbar {
@@ -96,6 +98,7 @@ body {
   width: 60%;
   margin: auto;
   background-color: var(--main-bg-color);
+  padding-bottom: 200px;
 }
 /* FAQ LIST */
 .faq-h1 {
@@ -116,8 +119,8 @@ body {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  list-style: none;
-  font-weight: 500;
+  list-style: circle;
+  font-weight: 800;
 }
 .faq-address {
   font-style: italic;
@@ -132,7 +135,7 @@ body {
 }
 /* FOOTER */
 .footer {
-  
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
