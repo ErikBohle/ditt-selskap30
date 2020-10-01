@@ -73,7 +73,6 @@ body {
 .logo {
   filter: invert(100%);
   width: 1em;
-  
   background-color: var(--main-bg-color);
 }
 /* BANNER */
@@ -92,7 +91,12 @@ body {
 .content {
   text-align: center;
 }
-
+/* FAQ MAIN */
+.main-faq{
+  width: 60%;
+  margin: auto;
+  background-color: var(--main-bg-color);
+}
 /* FAQ LIST */
 .faq-h1 {
   text-align: center;
@@ -102,7 +106,10 @@ body {
   width: 100%;
   text-align: left;
   padding-top: 10px;
+  padding-left: 30px;
   font-size: 1.5em;
+  list-style-type: square;
+  font-weight: 800;
 }
 
 .faq-answer {
@@ -110,11 +117,19 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   list-style: none;
+  font-weight: 500;
 }
 .faq-address {
   font-style: italic;
 }
-
+/*FAQ Background Image */
+.faq-bg-img{
+  background: url(/image/faq-bg-josh-spires-unsplash.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /* FOOTER */
 .footer {
   position: fixed;
