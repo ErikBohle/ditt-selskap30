@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 body {
@@ -26,7 +27,9 @@ margin-bottom:30px;
 }
 
 h1,h2,h3,h4 {
+
   
+
   margin-bottom:15px;
 
 }
@@ -38,6 +41,7 @@ font-size:26px;
 ul {
   padding-left: 30px;
 }
+
 
 /* NAVBAR */
 .navbar {
@@ -111,20 +115,57 @@ ul {
 
 /* MAIN */
 .main {
+
   max-width: 1000px;
   margin: auto;
   padding:20px;
-}
-.content {
-  text-align: center;
-}
-/* FAQ MAIN */
-.main-faq{
+
   width: 60%;
   margin: auto;
   background-color: var(--main-bg-color);
   padding-bottom: 200px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
 }
+.main h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3em;
+
+}
+.content {
+  text-align: center;
+}
+/* Product */
+* Product Main */
+
+.main h1, .main p{
+  text-align: center;
+  padding:  0.4em 0;
+}
+/* Product tables */
+.main table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.main tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.main td, .main th{
+  border: 1px solid black;
+  padding: 5px;
+}
+/* PRODUCT image */
+.product-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  width: 60%;
+  font-size: 0.7em;
+}
+
 /* FAQ LIST */
 .faq-h1 {
   text-align: center;
@@ -154,7 +195,7 @@ ul {
 }
 /*FAQ Background Image */
 .faq-bg-img{
-  background: url(/image/faq-bg-josh-spires-unsplash.jpg) no-repeat center center fixed; 
+  background: url(/image/faq-bg-josh-spires-unsplash-min.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
