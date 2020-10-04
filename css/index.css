@@ -87,8 +87,9 @@ body {
 
 /* MAIN */
 .main {
-  width: 50%;
+  max-width: 1000px;
   margin: auto;
+  padding:20px;
 }
 .content {
   text-align: center;
