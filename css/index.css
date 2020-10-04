@@ -88,19 +88,51 @@ body {
 
 /* MAIN */
 .main {
-  width: 50%;
-  margin: auto;
-}
-.content {
-  text-align: center;
-}
-/* FAQ MAIN */
-.main-faq{
   width: 60%;
   margin: auto;
   background-color: var(--main-bg-color);
   padding-bottom: 200px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
 }
+.main h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3em;
+}
+.content {
+  text-align: center;
+}
+/* Product */
+* Product Main */
+
+.main h1, .main p{
+  text-align: center;
+  padding:  0.4em 0;
+}
+/* Product tables */
+.main table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.main tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.main td, .main th{
+  border: 1px solid black;
+  padding: 5px;
+}
+/* PRODUCT image */
+.product-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  width: 60%;
+  font-size: 0.7em;
+}
+
 /* FAQ LIST */
 .faq-h1 {
   text-align: center;
