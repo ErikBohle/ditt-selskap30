@@ -19,7 +19,6 @@ body {
   color:#424242;
 }
 
-
 /* PARAGRAPHS,LISTS AND HEADINGS*/
 
 p {
@@ -28,6 +27,8 @@ margin-bottom:30px;
 }
 
 h1,h2,h3,h4 {
+
+  
 
   margin-bottom:15px;
 
@@ -114,6 +115,11 @@ ul {
 
 /* MAIN */
 .main {
+
+  max-width: 1000px;
+  margin: auto;
+  padding:20px;
+
   width: 60%;
   margin: auto;
   background-color: var(--main-bg-color);
@@ -126,6 +132,7 @@ ul {
   text-align: center;
   text-decoration: underline;
   font-size: 3em;
+
 }
 .content {
   text-align: center;
