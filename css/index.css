@@ -176,3 +176,10 @@ body {
   color: red;
   text-decoration: none;
 }
+
+.footer .copyright {
+  display:inline;
+  text-align:center;
+  font-size:14px;
+
+}
