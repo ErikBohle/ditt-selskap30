@@ -117,15 +117,13 @@ ul {
 
 /* MAIN */
 .main {
-
   max-width: 1000px;
   margin: auto;
   padding:20px;
-
   width: 60%;
   margin: auto;
   background-color: var(--main-bg-color);
-  padding-bottom: 200px;
+  padding-bottom: 220px;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 2em;
