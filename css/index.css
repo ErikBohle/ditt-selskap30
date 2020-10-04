@@ -12,6 +12,8 @@
   font-family: Arial, Helvetica, sans-serif;
   
 }
+
+
 body {
   overflow-x: hidden;
   height: 100%;
@@ -247,4 +249,27 @@ ul {
   text-align:center;
   font-size:14px;
 
+}
+
+@media only screen and (max-width: 1000px) { 
+  .main{
+    width: 100%;
+  }
+  .faq-bg-img{
+    background: none;
+  }
+  .banner-img{
+    width: 100%;
+  }
+  .navbar {
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+    background-color: var(--main-color);
+    min-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3em;
+  }
 }
