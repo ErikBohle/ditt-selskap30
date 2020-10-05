@@ -12,6 +12,8 @@
   font-family: Arial, Helvetica, sans-serif;
   
 }
+
+
 body {
   overflow-x: hidden;
   height: 100%;
@@ -115,15 +117,13 @@ ul {
 
 /* MAIN */
 .main {
-
   max-width: 1000px;
   margin: auto;
   padding:20px;
-
   width: 60%;
   margin: auto;
   background-color: var(--main-bg-color);
-  padding-bottom: 200px;
+  padding-bottom: 220px;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 2em;
@@ -178,7 +178,7 @@ ul {
   text-align: left;
   padding-top: 10px;
   padding-left: 30px;
-  font-size: 1.5em;
+  
   list-style-type: square;
   font-weight: 800;
 }
@@ -248,4 +248,27 @@ ul {
   text-align:center;
   font-size:14px;
 
+}
+
+@media only screen and (max-width: 1000px) { 
+  .main{
+    width: 100%;
+  }
+  .faq-bg-img{
+    background: none;
+  }
+  .banner-img{
+    width: 100%;
+  }
+  .navbar {
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+    background-color: var(--main-color);
+    min-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3em;
+  }
 }
