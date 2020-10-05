@@ -117,7 +117,7 @@ ul {
 
 /* MAIN */
 .main {
-  max-width: 1000px;
+  
   margin: auto;
   padding:20px;
   width: 60%;
@@ -129,7 +129,7 @@ ul {
   padding-top: 2em;
 }
 .main-alt{
-  max-width: 100%;
+  max-width: 1000px;
 }
 
 .main h1{
