@@ -217,7 +217,7 @@ ul {
   color: var(--main-bg-color);
   padding: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 .footer .logo { 
@@ -228,6 +228,7 @@ ul {
 .footer ul li {
   list-style: none;
   color: var(--main-bg-color);
+  text-align:center;
 }
 .footer a {
   color: var(--main-bg-color);
