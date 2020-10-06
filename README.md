@@ -1,4 +1,6 @@
 # ditt-selskap30
+A website made for an assignment at USN
+
 oblig oppg 1
 
 
