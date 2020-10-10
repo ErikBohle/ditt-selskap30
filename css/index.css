@@ -10,40 +10,36 @@
   margin: 0;
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
-
 
 body {
   overflow-x: hidden;
   height: 100%;
-  line-height:1.5;
-  color:#424242;
+  line-height: 1.5;
+  color: #424242;
 }
 
 /* PARAGRAPHS,LISTS AND HEADINGS*/
 
 p {
-margin-bottom:30px;
-
+  margin-bottom: 30px;
 }
 
-h1,h2,h3,h4 {
-
-  
-
-  margin-bottom:15px;
-
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 15px;
 }
 
-h2,h3 {
-font-size:26px;
+h2,
+h3 {
+  font-size: 26px;
 }
 
 ul {
   padding-left: 30px;
 }
-
 
 /* NAVBAR */
 .navbar {
@@ -109,18 +105,18 @@ ul {
 }
 /* BANNER */
 .banner-img {
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+
 }
 
 /* MAIN */
 .main {
-  
   margin: auto;
-  padding:20px;
-  width: 60%;
+  padding: 20px;
+  width: 100%;
   margin: auto;
   background-color: var(--main-bg-color);
   padding-bottom: 220px;
@@ -128,63 +124,79 @@ ul {
   padding-right: 2em;
   padding-top: 2em;
 }
-.main-alt{
-  max-width: 1000px;
+.main-column {
+  float: left;
+}
+.left {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
-.main h1{
+.right {
+  width: 65%;
+  padding-left: 2em;
+  margin: auto;
+}
+.right h1{
+  text-align: center;
+}
+
+.main h1 {
   text-align: center;
   text-decoration: underline;
   font-size: 3em;
-
 }
 .content {
   text-align: center;
 }
 /* Product */
-* Product Main */
-
-.main h1, .main p{
+* Product Main */ .main h1,
+.main p {
   text-align: center;
-  padding:  0.4em 0;
+  padding: 0.4em 0;
 }
 /* Product tables */
-.main table{
+.main table {
   border-collapse: collapse;
   width: 100%;
 }
 .main tr:nth-child(even) {
   background-color: #dddddd;
 }
-.main td, .main th{
+.main td,
+.main th {
   border: 1px solid black;
   padding: 5px;
 }
 /* PRODUCT image */
-.product-image{
+.product-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1em;
-  width: 60%;
-  font-size: 0.7em;
   
+  
+  width: 400px;
+  font-size: 0.7em;
 }
 
-
 /* FAQ LIST */
-.faq-h1 {
-  text-align: center;
+.faq-h2 {
+  text-align: left;
   padding: 10px 0;
+  text-decoration: underline;
+  font-size: 3em;
+}
+#faq-h1{
+  text-align: center;
   text-decoration: underline;
   font-size: 3.5em;
 }
 .faq {
-  width: 100%;
+  
   text-align: left;
   padding-top: 10px;
   padding-left: 30px;
-  
+
   list-style-type: square;
   font-weight: 800;
 }
@@ -199,20 +211,7 @@ ul {
 .faq-address {
   font-style: italic;
 }
-/*FAQ Background Image */
-.faq-bg-img{
-  background: url(/image/faq-bg-josh-spires-unsplash-min.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-/* FAQ background credit */
-.faq-credit{
-  position: absolute;
-  padding-top: 5em;
-  padding-left: 2em;
-}
+
 /* FOOTER */
 .footer {
   position: fixed;
@@ -226,15 +225,15 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.footer .logo { 
-  width:50px;
+.footer .logo {
+  width: 50px;
   margin: 0 10px 0 0;
 }
 
 .footer ul li {
   list-style: none;
   color: var(--main-bg-color);
-  text-align:center;
+  text-align: center;
 }
 .footer a {
   color: var(--main-bg-color);
@@ -250,20 +249,19 @@ ul {
 }
 
 .footer .copyright {
-  display:inline;
-  text-align:center;
-  font-size:14px;
-
+  display: inline;
+  text-align: center;
+  font-size: 14px;
 }
 
-@media only screen and (max-width: 1000px) { 
-  .main{
+@media only screen and (max-width: 1000px) {
+  .main {
     width: 100%;
   }
-  .faq-bg-img{
+  .faq-bg-img {
     background: none;
   }
-  .banner-img{
+  .banner-img {
     width: 100%;
   }
   .navbar {
