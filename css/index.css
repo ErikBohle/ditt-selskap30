@@ -1,9 +1,5 @@
 /* FUNCTIONS AND ROOT */
-:root {
-  --main-bg-color: var;
-  --main-color: rgb(0, 0, 0);
-  --main-color-off: rgb(128, 128, 128);
-}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -71,6 +67,10 @@ ul {
 .navbar li a:active {
   color: gray;
 }
+/* SLIDER */
+.slider{
+  text-align: center;
+}
 /* flexbox support */
 @supports (display: flex) {
   .navbar {
@@ -113,7 +113,7 @@ ul {
 .logo {
   filter: invert(100%);
   width: 1em;
-  background-color: var(--main-bg-color);
+  background-color: #fff;
 }
 /* BANNER */
 .banner-img {
@@ -129,7 +129,7 @@ ul {
   padding: 20px;
   width: 100%;
   margin: auto;
-  background-color: var(--main-bg-color);
+  background-color: #fff;
   padding-bottom: 220px;
   padding-left: 2em;
   padding-right: 2em;
@@ -276,7 +276,7 @@ ul {
     width: 100%;
     height: auto;
     font-size: 1em;
-    background-color: var(--main-color);
+    background-color: #000;
     min-width: 200px;
     display: flex;
     justify-content: space-around;
