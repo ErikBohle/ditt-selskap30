@@ -3,6 +3,8 @@
   --main-bg-color: rgb(255, 255, 255);
   --main-color: rgb(0, 0, 0);
   --main-color-off: rgb(128, 128, 128);
+  display: -ms-flexbox;
+   display: -webkit-flex; display:-webkit-box; 
 }
 * {
   box-sizing: border-box;
@@ -13,6 +15,7 @@
 }
 
 body {
+  
   overflow-x: hidden;
   height: 100%;
   line-height: 1.5;
