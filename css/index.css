@@ -201,7 +201,7 @@ ul {
 }
 /*FAQ Background Image */
 .faq-bg-img{
-  background: url(/image/faq-bg-josh-spires-unsplash-min.jpg) no-repeat center center fixed; 
+  background: url(/ditt-selskap30/image/faq-bg-josh-spires-unsplash-min.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -231,10 +231,22 @@ ul {
   margin: 0 10px 0 0;
 }
 
+.footer .footer-links {
+  display:flex;
+  
+}
+
+.footer .material-icons {
+
+  font-size:36px;
+}
+
 .footer ul li {
   list-style: none;
   color: var(--main-bg-color);
   text-align:center;
+  margin-right:20px;
+  padding:0;
 }
 .footer a {
   color: var(--main-bg-color);
