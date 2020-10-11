@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generic Factory</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script async defer src="./script.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <ul class="navbar">
+        <ul id="nav" class="navbar">
           <li>
             <a href="./index.html"
               ><img class="logo" src="image/logo.png" alt="logo" /> &nbsp; TGF</a
@@ -19,6 +22,7 @@
           <li class="current"><a href="./about.html">About</a></li>
           <li class="link"><a href="./product.html">Products</a></li>
           <li class="link"><a href="./faq.html">FAQ</a></li>
+          <li ><a href="javascript:void(0);" class="menu" onclick="toggleNavigation()"><i class="material-icons menu">menu</i></a></li>
         </ul>
       </nav>
       <div class="div">
@@ -59,16 +63,22 @@
     </div>
 
     <footer class="footer">
-      <img class="logo" src="image/logo.png" alt="logo" />
       <ul>
-        <li><a href="./about.html">About us</a></li>
-        <li><a href="mailto:genericfactory@email.com">Send us a message</a></li>
 
-        <li><a href="https://www.facebook.com/">Connect with us on Facebook</a></li>
+      <li><img class="logo" src="image/logo.png" alt="logo" /></li>
+      <li><a href="./about.html">About us</a></li>
+      </ul>
+      <ul class="footer-links">
+        <li><a href="https://www.facebook.com/"><i class="material-icons">facebook</i></a></li>
+        <li><a href="mailto:genericfactory@email.com"><i class="material-icons">email</i></a></li>
+        <li><a href="tel:+4741397720"><i class="material-icons">contact_phone</i></a></li>
+       
       </ul>
       <div class="copyright">
-        &copy; <time datetime="2020-09-23">2020</time> The Generic Factory
-      </div>
-    </footer>
+      &copy; <time datetime="2020-09-23">2020</time> The Generic Factory 
+        </div>
+        
+    </footer> 
+
   </body>
 </html>

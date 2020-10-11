@@ -34,8 +34,20 @@ h3 {
   font-size: 26px;
 }
 
-ul {
+.main ul {
   padding-left: 30px;
+}
+/*figures and images*/
+
+.main figure {
+
+  margin:15px 0 15px 0;
+}
+figcaption {
+
+  font-size:88%;
+  color:darkgray;
+
 }
 
 /* NAVBAR */
@@ -126,7 +138,7 @@ ul {
 /* MAIN */
 .main {
   margin: auto;
-  padding: 20px;
+  padding:20px;
   width: 100%;
   margin: auto;
   background-color: #fff;
@@ -135,30 +147,18 @@ ul {
   padding-right: 2em;
   padding-top: 2em;
 }
-.main-column {
-  float: left;
-  border: 1px black solid;
+
+.main-content {
+  max-width: 600px;
+  margin:auto;
 }
-.left {
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
+
+.main h1{
   text-align: left;
-}
+  text-decoration: none;
+  font-size: 2em;
 
-.right {
-  width: 65%;
-  padding-left: 2em;
-  margin: auto;
-}
-.right h1 {
-  text-align: center;
-}
 
-.main h1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3em;
 }
 .content {
   text-align: center;
@@ -222,6 +222,24 @@ ul {
   font-weight: 800;
 }
 
+.faq-address {
+  font-style: italic;
+}
+/*FAQ Background Image */
+.faq-bg-img{
+  background: url(/ditt-selskap30/image/faq-bg-josh-spires-unsplash-min.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* FAQ background credit */
+.faq-credit{
+  position: absolute;
+  padding-top: 5em;
+  padding-left: 2em;
+}
+
 /* FOOTER */
 .footer {
   position: fixed;
@@ -240,10 +258,24 @@ ul {
   margin: 0 10px 0 0;
 }
 
+.footer .footer-links {
+  display:flex;
+  
+}
+
+.footer .material-icons {
+
+  font-size:36px;
+}
+
 .footer ul li {
   list-style: none;
+
+    margin-right:20px;
+  padding:0;
   color: rgb(255, 255, 255);
   text-align: center;
+
 }
 .footer a {
   color: rgb(255, 255, 255);
@@ -283,3 +315,67 @@ ul {
     padding: 0.3em;
   }
 }
+
+
+/*RESPONSIVE NAVIGATION*/
+
+/* hide menu icon on screens above 1024px */
+
+@media screen and (min-width: 1024px) {
+  nav ul.navbar li:last-child {
+    
+    display: none;
+  }
+}
+/*display menu icon on screens below 1024px*/
+
+@media screen and (max-width: 1024px) {
+  nav ul.navbar li:not(:last-child) {
+    
+    display: none;
+  }
+
+  
+  
+  .navbar {
+    justify-content:flex-end;
+  }
+}
+ 
+/*styling for menu items on screens below 1024px*/
+
+@media screen and (max-width: 1024px) {
+   nav ul.navbar.responsive {
+    
+    position: relative;
+    display:block;
+    
+   
+  
+  }
+
+  .link a:hover:before, .current a:before {
+    width: 0;
+  }
+
+  
+
+  nav ul.navbar li:last-child {
+
+    position:absolute;
+    top:3px;
+    right:3px;
+
+
+  }
+
+  
+  
+  nav ul.navbar.responsive li {
+    float:none;
+    display: block;
+    text-align: left;
+    
+  }
+}
+
