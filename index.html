@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script async defer src="./script.js"></script>
   </head>
   <body class="faq-bg-img">
     <header>
-      <nav>
-        <ul class="navbar">
+      <nav >
+       
+        <ul id="nav" class="navbar" >
           <li>
             <a href="./index.html"><img class="logo" src="image/logo.png" alt="logo" /> &nbsp; TGF</a>
           </li>
@@ -19,7 +21,10 @@
           <li class="link"><a href="./about.html">About</a></li>
           <li class="link"><a href="./product.html">Products</a></li>
           <li class="link"><a href="./faq.html">FAQ</a></li>
+          <li ><a href="javascript:void(0);" class="menu" onclick="toggleNavigation()"><i class="material-icons menu">menu</i></a></li>
         </ul>
+          
+        
       </nav>
       <div class="div"><img src="image/banner-image-min.jpg" class="banner-img" alt="banner" /></div>
     </header>
@@ -36,14 +41,14 @@
   Compress the folder to a zip and label it "surname_lastname.zip"
 -->
     <div class="main">
+      <div class="main-content">
       <h1>Why us</h1>
-      <p>With the sheer quality and competetive pricing of our selection, the choice is a simple one.</p>
-      <p>And our selection of toys, engines and thoughtful code is excelled by none.</p>
+      <p>With the sheer quality and competetive pricing of our selection, the choice is a simple one. And our selection of toys, engines and thoughtful code is excelled by none.</p>
       <h1>Our vision</h1>
       <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
       <h1>Resources</h1>
       <p>You can learn more about us on our <a href="about.html">about page</a> and <a href="product.html">product page</a> </p>
-    </div>
+    </div></div>
     <footer class="footer">
       <ul>
       <li><img class="logo" src="image/logo.png" alt="logo" /></li>
@@ -58,6 +63,7 @@
       <div class="copyright">
       &copy; <time datetime="2020-09-23">2020</time> The Generic Factory 
         </div>
+        
     </footer> 
   </body>
 </html>

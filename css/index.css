@@ -40,8 +40,20 @@ h2,h3 {
 font-size:26px;
 }
 
-ul {
+.main ul {
   padding-left: 30px;
+}
+/*figures and images*/
+
+.main figure {
+
+  margin:15px 0 15px 0;
+}
+figcaption {
+
+  font-size:88%;
+  color:darkgray;
+
 }
 
 
@@ -120,7 +132,7 @@ ul {
   
   margin: auto;
   padding:20px;
-  width: 60%;
+  width: 100%;
   margin: auto;
   background-color: var(--main-bg-color);
   padding-bottom: 220px;
@@ -128,14 +140,15 @@ ul {
   padding-right: 2em;
   padding-top: 2em;
 }
-.main-alt{
-  max-width: 1000px;
+.main-content {
+  max-width: 600px;
+  margin:auto;
 }
 
 .main h1{
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3em;
+  text-align: left;
+  text-decoration: none;
+  font-size: 2em;
 
 }
 .content {
@@ -288,5 +301,67 @@ ul {
     display: flex;
     justify-content: space-around;
     padding: 0.3em;
+  }
+}
+
+/*RESPONSIVE NAVIGATION*/
+
+/* hide menu icon on screens above 1024px */
+
+@media screen and (min-width: 1024px) {
+  nav ul.navbar li:last-child {
+    
+    display: none;
+  }
+}
+/*display menu icon on screens below 1024px*/
+
+@media screen and (max-width: 1024px) {
+  nav ul.navbar li:not(:last-child) {
+    
+    display: none;
+  }
+
+  
+  
+  .navbar {
+    justify-content:flex-end;
+  }
+}
+ 
+/*styling for menu items on screens below 1024px*/
+
+@media screen and (max-width: 1024px) {
+   nav ul.navbar.responsive {
+    
+    position: relative;
+    display:block;
+    
+   
+  
+  }
+
+  .link a:hover:before, .current a:before {
+    width: 0;
+  }
+
+  
+
+  nav ul.navbar li:last-child {
+
+    position:absolute;
+    top:3px;
+    right:3px;
+
+
+  }
+
+  
+  
+  nav ul.navbar.responsive li {
+    float:none;
+    display: block;
+    text-align: left;
+    
   }
 }
