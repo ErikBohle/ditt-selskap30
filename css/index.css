@@ -50,15 +50,17 @@ ul {
   font-size: 2em;
   background-color: var(--main-color);
   min-width: 500px;
-  display: flex;
-  justify-content: space-around;
+ 
   padding: 0.3em;
+  
+  text-align: center;
 }
 .navbar li {
   position: relative;
   display: inline-block;
   list-style: none;
   text-align: justify;
+  margin-left: 1em;
 }
 .navbar li a {
   color: var(--main-bg-color);
@@ -71,7 +73,18 @@ ul {
 .navbar li a:active {
   color: gray;
 }
-
+/* flexbox support */
+@supports (display: flex) {
+  .navbar{
+   display: flex;
+  justify-content: space-around;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+}
 /* NAV HOVER AND CURRENT PAGE*/
 .link a:before {
   content: " ";
@@ -220,9 +233,9 @@ ul {
   background-color: var(--main-color);
   color: var(--main-bg-color);
   padding: 20px;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 .footer .logo {
   width: 50px;
