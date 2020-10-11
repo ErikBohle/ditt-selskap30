@@ -9,12 +9,14 @@
       rel="stylesheet">
       <script async defer src="./script.js"></script>
   </head>
-  <body class="faq-bg-img">
+  <body>
     <header>
       <nav>
         <ul id="nav" class="navbar">
           <li>
-            <a href="./index.html"><img class="logo" src="image/logo.png" alt="logo" /> &nbsp; TGF</a>
+            <a href="./index.html"
+              ><img class="logo" src="image/logo.png" alt="logo" /> &nbsp; TGF</a
+            >
           </li>
           <li class="link"><a href="./index.html">Home</a></li>
           <li class="current"><a href="./about.html">About</a></li>
@@ -23,36 +25,46 @@
           <li ><a href="javascript:void(0);" class="menu" onclick="toggleNavigation()"><i class="material-icons menu">menu</i></a></li>
         </ul>
       </nav>
-      <div class="div"><img src="image/banner-image-min.jpg" class="banner-img" alt="banner" /></div>
+      <div class="div">
+        <img src="image/banner-image-min.jpg" class="banner-img" alt="banner" />
+      </div>
     </header>
-    <div class="main">
+    <div class="main main-column left">
       <h1>History of the company</h1>
-      <p>Our company has a brief but successful history. It was founded in september 2020 by 3 students at USN in response to an assignment given to us</p> 
-      <p>Our mission is to prove to our instuctor that we are familiar with the the fundamental concepts of front-end development</p>
-      <p><strong>Services we provide:</strong></p>
+      <p>
+        Our company has a brief but successful history. It was founded in september 2020 by 3
+        students at USN in response to an assignment given to us
+      </p>
+      <p>
+        Our mission is to prove to our instuctor that we are familiar with the the fundamental
+        concepts of front-end development
+      </p>
+    </div>
+    <div class="main main-column right">
+      <h1>Services we provide:</h1>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript (on request)</li>
-        </ul>
+      </ul>
       <figure>
-     <img src="image/markus-spiske-466ENaLuhLY-unsplash-min.jpg" alt="mandatory image" style="max-width:600px; margin:auto;"/>
-        <figcaption>Photo by Markus Spiske on Unsplash <br>
-          Mandatory image - this is an example of our product</figcaption>
+        <img
+          class="about-image"
+          src="image/markus-spiske-466ENaLuhLY-unsplash-min.jpg"
+          alt="mandatory image"
+        />
+        <figcaption>Photo by Markus Spiske on Unsplash</figcaption>
       </figure>
-      
+
       <p>See our <a href="product.html">products page</a> for more information</p>
-      <h2>Tours</h2>
-      <p>You can read more about our tours on our <a href="faq.html"> FAQ page</a></p>
-      
-   
-      <h1>Location and contact information</h1>
-      <img class="product-image" src="image/about-map-google-min.PNG" alt="" />
-      <p class="product-image">Photo by Google, From GoogleMaps</p>
-      
+
+      <h1>Location</h1>
+      <p>Suggestion for location API usage</p>
     </div>
+
     <footer class="footer">
       <ul>
+
       <li><img class="logo" src="image/logo.png" alt="logo" /></li>
       <li><a href="./about.html">About us</a></li>
       </ul>
@@ -67,5 +79,6 @@
         </div>
         
     </footer> 
+
   </body>
 </html>
