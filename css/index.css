@@ -315,6 +315,22 @@ figcaption {
     padding: 0.3em;
   }
 }
+/* Slider */
+
+.slideshow {
+  top: 0;
+  position: relative;
+}
+.slideshow img {
+  z-index: -1;
+  max-width: 100vw;
+  width: 100%;
+  height: 90vh;
+}
+
+.slides {
+  display: none;
+}
 
 
 /*RESPONSIVE NAVIGATION*/
