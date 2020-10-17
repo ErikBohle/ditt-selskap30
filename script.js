@@ -1,14 +1,13 @@
-
 /*TOGGLE RESPONSIVE NAVIGATION*/
 
 function toggleNavigation() {
-    let menu = document.getElementById("nav");
-    if (menu.className === "navbar") {
-      menu.className += " responsive";
-    } else {
-      menu.className = "navbar";
-    }
+  let menu = document.getElementById("nav");
+  if (menu.className === "navbar") {
+    menu.className += " responsive";
+  } else {
+    menu.className = "navbar";
   }
+}
 // slider
 var slideIndex = 0;
 carousel();
@@ -20,8 +19,10 @@ function carousel() {
     x[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
+  if (slideIndex > x.length) {
+    slideIndex = 1;
+  }
+  x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 4000); //(carousel, x)  X Changes image every 4 seconds
 }
 
@@ -68,5 +69,3 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   );
   infoWindow.open(map);
 }
-
-
