@@ -13,5 +13,8 @@ Hvordan designet dere nettstedet? Hvilke prinsipper (arbeidsmetodikk) arbeidet d
 ## Teknologi brukt for implementasjon:
 Javascript, jQuery, CSS3 og HTML5
 
+##Video presentation:
+https://youtu.be/iY2NBnmBjWI
+
 ## Deployed to: https://reverent-snyder-9baf0e.netlify.app/
 ## IE9 snapshot https://ie9.ieonchrome.com/#https://reverent-snyder-9baf0e.netlify.app/product.html
