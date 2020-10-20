@@ -136,8 +136,8 @@ figcaption {
 }
 
 /* MAIN */
-.main {
-  margin: auto;
+/*.main {
+  
   padding:20px;
   width: 100%;
   margin: auto;
@@ -146,12 +146,10 @@ figcaption {
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 2em;
-}
+}*/
 
-.main-content {
-  max-width: 600px;
-  margin:auto;
-}
+
+
 
 .main h1{
   text-align: left;
@@ -242,9 +240,8 @@ figcaption {
 
 /* FOOTER */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  
+  
   width: 100%;
   background-color: #000;
   color: rgb(255, 255, 255);
@@ -265,7 +262,7 @@ figcaption {
 
 .footer .material-icons {
 
-  font-size:36px;
+  font-size:34px;
 }
 
 .footer ul li {
@@ -405,3 +402,128 @@ height: 400px;
 overflow-x: none;
 
 }
+
+/* layout flex-container */
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  
+}
+
+.sidebar {
+  width: 25.3333%;
+  background-color: rgba(204, 223, 245, 0.23);
+  text-align: left;
+  position: relative;
+  max-width: 300px;
+  padding-top:40px;
+  font-size: large;
+}
+
+.sidebar ul li {
+  
+  padding: 10px 10px 10px 20px;
+  text-transform: uppercase;
+
+}
+
+.sidebar a:visited, .sidebar a {
+  
+  color:#032b4e;
+  text-decoration: none;
+}
+
+.sidebar ul li:hover {
+  
+  background-color: rgba(204, 223, 245, 0.33);
+  cursor:pointer;
+  
+
+}
+
+.sidebar ul {
+  
+  margin:0;
+  padding:0;
+
+}
+
+.main-content {
+  max-width: 940px;
+  padding: 40px;
+  flex: 1 ;
+  margin: 0px auto;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  .sidebar {
+
+    display:none;
+  }
+  
+   
+  }
+
+  /* Why us section index*/
+
+  .hero-section {
+    height: 500px;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  }
+
+  .hero-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    flex-wrap:wrap;
+    padding:40px;
+    font-family:"open sans";
+  
+  }
+  .hero-overlay h1 {
+    
+    font-family:"open sans";
+    font-size:xxx-large;
+    font-weight:bold; 
+
+  }
+   .hero-overlay p {
+     max-width:900px;
+     color:white;  
+     text-align:center; 
+     font-size:20px; 
+   }
+
+  .cta-button {
+     padding:15px 20px;
+     border-radius:5px;
+     border:none;
+     width:200px;
+     font-size:large;
+     color:white;
+     background-color:#0F9D58;
+     transition: transform ease-in-out 250ms;
+
+  }
+
+  .cta-button:hover {
+     
+    cursor:pointer;
+    transform: scale(1.1);
+
+
+ }
+
