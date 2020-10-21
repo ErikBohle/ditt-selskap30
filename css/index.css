@@ -171,6 +171,7 @@ figcaption {
 .main table {
   border-collapse: collapse;
   width: 100%;
+  margin-bottom:30px;
 }
 .main tr:nth-child(even) {
   background-color: #dddddd;
@@ -464,6 +465,20 @@ overflow-x: none;
 
     display:none;
   }
+  
+  .main table {
+   
+    font-size: small;
+  }
+  
+  .main-content {
+    
+    padding: 20px;
+    overflow-x: auto;
+    display: block;
+}
+  
+    
   
    
   }
