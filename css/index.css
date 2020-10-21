@@ -185,7 +185,7 @@ figcaption {
 .product-image {
   display: block;
 
-  width: 400px;
+  width: 100%;
   font-size: 0.7em;
 }
 /* ABOUT image */
