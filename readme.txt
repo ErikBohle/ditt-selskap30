@@ -1,7 +1,7 @@
 # group30
 
 ## Prosjektbeskrivelse: 
-Hva slags firma er dette, og hva er tjenesten/produktet de leverer.
+Well Woven Websites er et webdesignbyrå som tilbyr responsive nettsider og tilbyr tjenester som integrering mot API'er som geolocation.
 
 ## Utviklere: 
 Are Martin Kallåk
@@ -10,10 +10,12 @@ Erik Bøhle
 ## Web design: 
 Hvordan designet dere nettstedet? Hvilke prinsipper (arbeidsmetodikk) arbeidet dere etter? Hvordan implementerte dere løsningene?
 
-## Teknologi brukt for implementasjon:
-Javascript, jQuery, CSS3 og HTML5
+ Progressive enhancement. -> lavterskel
 
-##Video presentation:
+## Teknologi brukt for implementasjon:
+Javascript, CSS3 og HTML5
+
+##Video presentasjon:
 https://youtu.be/iY2NBnmBjWI
 
 ## Deployed to: https://reverent-snyder-9baf0e.netlify.app/
