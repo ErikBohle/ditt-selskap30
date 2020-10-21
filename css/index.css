@@ -348,7 +348,9 @@ figcaption {
     
     display: none;
   }
-
+  .slideshow{
+    display: none;
+  }
   
   
   .navbar {
