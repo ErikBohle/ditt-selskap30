@@ -1,4 +1,3 @@
-
 /** Geolocation API */
 
 let map, infoWindow;
@@ -59,6 +58,10 @@ function toggleNavigation() {
     menu.className = "navbar";
   }
 }
+
+//Only runs code if on index.html to avoid error logging
+if (window.location.pathname == "/index") {
+
 // slider
 var slideIndex = 0;
 carousel();
@@ -75,4 +78,4 @@ function carousel() {
   }
   x[slideIndex - 1].style.display = "block";
   setTimeout(carousel, 4000); //(carousel, x)  X Changes image every 4 seconds
-}
+}}
