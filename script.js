@@ -51,33 +51,34 @@ navigator.geolocation.getCurrentPosition(showMap);
 /*TOGGLE RESPONSIVE NAVIGATION*/
 
 function toggleNavigation() {
-    let menu = document.getElementById("nav");
-    let icon = document.querySelector(".material-icons")
-    if (menu.className === "navbar") {
-      menu.className += " responsive";
-    
-      icon.textContent = "close";
-    } else {
-      menu.className = "navbar";
-      icon.textContent = "menu";
-    }
-  }
-  //only runs on /index.html
-  if(window.location.pathname == '/index') {
-// slider
-var slideIndex = 0;
-carousel();
+  let menu = document.getElementById("nav");
+  let icon = document.querySelector(".material-icons");
+  if (menu.className === "navbar") {
+    menu.className += " responsive";
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("slides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    icon.textContent = "close";
+  } else {
+    menu.className = "navbar";
+    icon.textContent = "menu";
   }
-  slideIndex++;
-  if (slideIndex > x.length) {
-    slideIndex = 1;
+}
+//only runs on /index.html
+if (window.location.pathname == "/index.html") {
+  // slider
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {
+      slideIndex = 1;
+    }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 4000); //(carousel, x)  X Changes image every 4 seconds
   }
-  x[slideIndex - 1].style.display = "block";
-  setTimeout(carousel, 4000); //(carousel, x)  X Changes image every 4 seconds
-}}
+}
