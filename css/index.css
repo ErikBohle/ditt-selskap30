@@ -383,6 +383,7 @@ figcaption {
     position:absolute;
     top:3px;
     right:10px;
+    padding: 10px 0 10px 0;
 
 
   }
@@ -488,7 +489,7 @@ overflow-x: none;
   /* Why us section index*/
 
   .hero-section {
-    height: 500px;
+    height: 550px;
     width: 100vw;
     position: relative;
     background-size: cover;
@@ -506,7 +507,7 @@ overflow-x: none;
     align-items: center;
     justify-content: center;
     flex-direction:column;
-    padding:40px;
+    padding:20px;
     font-family:"open sans";
   
   }
