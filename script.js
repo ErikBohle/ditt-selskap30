@@ -51,17 +51,19 @@ navigator.geolocation.getCurrentPosition(showMap);
 /*TOGGLE RESPONSIVE NAVIGATION*/
 
 function toggleNavigation() {
-  let menu = document.getElementById("nav");
-  if (menu.className === "navbar") {
-    menu.className += " responsive";
-  } else {
-    menu.className = "navbar";
+    let menu = document.getElementById("nav");
+    let icon = document.querySelector(".material-icons")
+    if (menu.className === "navbar") {
+      menu.className += " responsive";
+    
+      icon.textContent = "close";
+    } else {
+      menu.className = "navbar";
+      icon.textContent = "menu";
+    }
   }
-}
-
-//Only runs code if on index.html to avoid error logging
-if (window.location.pathname == "/index") {
-
+  //only runs on /index.html
+  if(window.location.pathname == '/index') {
 // slider
 var slideIndex = 0;
 carousel();
